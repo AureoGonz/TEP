@@ -1,0 +1,107 @@
+void main() {
+  bool dog = false;
+  print(dog);
+  
+  int ero = 9;
+  print(ero);
+  
+  double ado = 2.9;
+  print(ado);
+  
+  String oCuatring = '\${ero}';
+  print(oCuatring);
+  
+  var iable = ero;
+  print(iable);
+  
+  dynamic o = oCuatring;
+  print(o.runtimeType);
+  o = iable;
+  print(o.runtimeType);
+  
+  const double antinopla = 3.1416;
+  print(antinopla);
+  
+  final double pi = 3.1416;
+  print(pi);
+  
+  List<int> acos = new List(5);
+  acos[0] = 3;
+  acos[1] = 4;
+  acos[2] = 4;
+  acos[3] = 3;
+  acos[4] = 5;
+  print(acos[2]);
+  
+  List<int> acos2 = [1,2,3,4,5];
+  acos2.add(6);
+  acos2.removeAt(1);
+  print(acos2);
+  
+  Map<String,int> eo = {
+    "diosito":10,
+    "mayan":10,
+    "benji":10,
+    "gruñon":10,
+    "omisama":10
+  };
+  print(eo);
+  
+  print('Este es pi: ${pi+2}');
+  
+  print(saludar('Aureo'));
+  
+}
+
+String saludar(String nombre, {int edad}){
+  return 'Hola $nombre \nTienes ${edad==null? 0:edad} años';
+}
+
+void main(){
+  int resultado;
+  resultado = sumar(3,4);
+  print(resultado);
+}
+
+/*
+int sumar(int a,int b){
+  return a+b;
+}
+*/
+
+int sumar(int a, int b) => a+b;
+
+int a =3;
+  
+  print(a==1? "Vale 1":(a==2? "Vale 2":"otro Valor"));
+  if(a==1){
+    print("vale1");
+  }else if(a==2){
+    print("vale2");
+  }else{
+    print("Vale otro");
+  }
+  
+  switch(a){
+    case 1:
+      print("Vale 1");
+      break;
+    case 2:
+      print("Vale 2");
+      break;
+    default:
+      print("Vale verga");
+      break;
+  }
+
+    for(int i = 1;i<=10;i++){
+    print(i);
+  }
+  int con = 0;
+  while(con<10){
+    print(++con);
+  }
+  
+  do{
+    print(++con);
+  }while(con<=20);
